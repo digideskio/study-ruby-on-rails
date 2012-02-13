@@ -1,0 +1,6 @@
+class Foo
+  def bar
+    method(__method__).owner
+  end
+end
+Foo.new.bar # => Foo
