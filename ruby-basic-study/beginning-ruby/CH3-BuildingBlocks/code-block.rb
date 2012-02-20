@@ -16,4 +16,3 @@ each_vowel { |vowel| puts vowel }
 print_parameter_to_screen = lambda { |x| puts x }
 print_parameter_to_screen.call(100)
 
-
