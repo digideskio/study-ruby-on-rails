@@ -1,0 +1,14 @@
+# on local mac os
+# depreacted!!!
+#gem install postgres -- --with-pgsql-dir=/Library/PostgreSQL/9.1
+
+
+### USE THIS for postgresql ######
+# http://deveiate.org/code/pg/
+
+
+#Install via RubyGems:
+gem install pg
+
+#You may need to specify the path to the ‘pg_config’ program installed with Postgres:
+gem install pg -- --with-pg-config=<path to pg_config>

@@ -1,0 +1,1 @@
+puts File.open("text.txt").readlines.join("--")

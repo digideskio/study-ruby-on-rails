@@ -1,0 +1,8 @@
+# mongrel vs webrick
+http://stackoverflow.com/questions/596902/mongrel-vs-webrick
+
+# Aboutn passenger
+http://www.modrails.com/
+
+# passenger install
+http://www.modrails.com/install.html
