@@ -3,9 +3,11 @@ def each_vowel(&code_block)
 end
 each_vowel { |vowel| puts vowel }
 
+puts "========"
 
 
-# yield : automatically detects any passed code block and passes control to it
+# yield : automatically detects any passed code block
+# and passes control to it
 # this less obvious what it does
 def each_vowel
   %w{a e i o u}.each { |vowel| yield vowel }
