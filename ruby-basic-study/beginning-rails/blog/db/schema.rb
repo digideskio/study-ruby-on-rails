@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120304234311) do
+ActiveRecord::Schema.define(:version => 20120308164859) do
 
   create_table "articles", :force => true do |t|
     t.datetime "created_at",   :null => false
@@ -24,7 +24,27 @@ ActiveRecord::Schema.define(:version => 20120304234311) do
     t.integer  "user_id"
   end
 
+  create_table "articles_categories", :id => false, :force => true do |t|
+    t.integer "article_id"
+    t.integer "category_id"
+  end
+
   create_table "attachments", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "comments", :force => true do |t|
+    t.integer  "article_id"
+    t.string   "name"
+    t.string   "email"
+    t.text     "body"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -47,9 +67,9 @@ ActiveRecord::Schema.define(:version => 20120304234311) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
-    t.string   "password"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "hashed_password"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end
