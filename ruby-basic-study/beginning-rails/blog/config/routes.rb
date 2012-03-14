@@ -1,5 +1,11 @@
 Blog::Application.routes.draw do
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
+  resources :users
+  resource :session
+  match '/login' => "sessions#new", :as => "login"
+  match '/logout' => "sessions#destroy" , :as => "logout"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -49,12 +55,19 @@ Blog::Application.routes.draw do
   #   end
 
   # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  # just remember to delete public/index.html. !!!! index.htmlを削除することを忘れずに
+  #root :to => 'welcome#index'
+  root :to => 'articles#index'
 
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+  # this route matches a URL like http://example.com/teams/
+#  match '/teams/home' => 'teams#index'
+  # set a prameter called query
+  # http://example.com/teams/search/toronto
+#  match '/teams/search/:query' => 'teams#search'
 end
