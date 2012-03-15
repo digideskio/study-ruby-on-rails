@@ -5,5 +5,4 @@
   <%= render @article.comments %>
 </div>
 
-<%# reder app/views/comments/new.html.erb%>
-<%=  render :file => 'comments/new' %>
+<%= link_to "new comment", new_article_comment_path(@article, :format => :js), :remote => true, :id => 'new_comment_link' %>
