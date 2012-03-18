@@ -1,5 +1,8 @@
 Blog::Application.routes.draw do
   resources :articles do
+    member do
+      post :notify_friend
+    end
     resources :comments
   end
   resources :users

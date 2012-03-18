@@ -1,9 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# Fixures are loaded into database before your test run:
+# you use to them to populate your database with data to test against.
 
-one:
-  email: MyString
-  password: MyString
+eugene:
+  email: 'eugene@example.com'
+  hashed_password: 'e5e9fa1ba31ecd1ae84f75caaa474f3a663f05f4' # => secret
 
-two:
-  email: MyString
-  password: MyString
+lauren:
+  email: 'lauren@example.com'
+  hashed_password: 'e5e9fa1ba31ecd1ae84f75caaa474f3a663f05f4' # => secret
+
+#one:
+#  email: MyString
+#  password: MyString
+#
+#two:
+#  email: MyString
+#  password: MyString

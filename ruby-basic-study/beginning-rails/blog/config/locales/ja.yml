@@ -1,0 +1,82 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ja:
+  hello: "おはよう世界"
+
+  general:
+    are_you_sure: 大丈夫ですか？
+    back: もどる
+    cancel: キャンセル
+    create: 生成
+    delete: 削除
+    edit: 修正
+    editing: 修正中
+    footer: 本のための簡単はブルグ(フッター文章)
+    email_a_friend: 友たちにメールを送信
+    search: 検索
+    send_email: メール送信
+    show: 表示
+    title: ブログ
+    update: 更新
+    your_name: 名前
+    your_friend_email: 友たちのメール
+    or: あたは
+  application:
+    access_denied: ログインしてください。
+  articles:
+    editing_article: 記事を修正
+    listing_articles: 記事リスト
+    new_article: 新規記事を登録
+    article: 記事
+    create_success: 記事が登録されました。
+    update_success: 記事が更新されました。
+    articles: 記事たち
+    notify_friend_success: メッセージが送信されました。
+  users:
+    new_user: 新規登録
+    edit_password: パスワード修正
+    editing_user: 登録情報修正
+    create_success: 登録されました。
+    update_success: 登録情報が更新されました。
+  sessions:
+    email: Eメール
+    password: パスワード
+    login: ログイン
+    logout: ログアウト
+    successful_login: ログインされました。
+    invalid_login: IDまたはパスワードが一致しません。
+    logout_success: ログアウトされました。
+  comments:
+    name: 名
+    email: Eメール
+    body: ボディ
+    comments: コメント
+    new_comment: 新しいコメント
+    create_success: コメントが追加されました。
+    create_failure: コメントを追加出来ません。
+    destroy_success: コメント削除
+    add: 追加
+    errors:
+      not_published_yet: まだ投稿されてません。
+
+  activerecord:
+      errors:
+        models:
+          article:
+            attributes:
+              title:
+                blank: タイトルを入れてください
+              body:
+                blank: ボディを入れてください
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d de %B"
+      long: "%d de %B de %Y"
+
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+    #abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+    #order: [:day, :month, :year]
