@@ -1,9 +1,9 @@
 #---
 # Excerpted from "Metaprogramming Ruby",
 # published by The Pragmatic Bookshelf.
-# Copyrights apply to this code. It may not be used to create training material, 
+# Copyrights apply to this code. It may not be used to create training material,
 # courses, books, articles, and the like. Contact us if you are in doubt.
-# We make no guarantees that this code is fit for any purpose. 
+# We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/ppmetr for more book information.
 #---
 # Computer as a Blank Slate (a better one than in blank.rb)
@@ -32,8 +32,8 @@ class Computer
   def respond_to?(method)
     @data_source.respond_to?("get_#{method}_info") || super
   end
-  
+
   # ...
 end
 
-require 'unit_test'
+require_relative 'unit_test'
